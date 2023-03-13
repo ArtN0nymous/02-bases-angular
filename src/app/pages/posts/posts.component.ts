@@ -12,4 +12,7 @@ export class PostsComponent implements OnInit{
   ngOnInit(): void {
       this.messages= this.dataService.getPost();
   }
+  escucharClick(id:any){
+    console.log(id);
+  }
 }
