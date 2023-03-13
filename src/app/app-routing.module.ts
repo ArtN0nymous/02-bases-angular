@@ -15,6 +15,10 @@ const routes:Routes=[
     component:AboutComponent
   },
   {
+    path:'posts',
+    loadChildren:()=>import('./pages/posts/posts.module').then(m=>m.PostsModule)
+  },
+  {
     path:'contact',
     component:ContactComponent
   },
